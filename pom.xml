@@ -8,11 +8,11 @@
 		<version>2.6.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>demo</artifactId>
+	<groupId>com.confidencebassey</groupId>
+	<artifactId>taskSchedulerApp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>demo</name>
-	<description>Demo project for Spring Boot</description>
+	<name>taskSchedulerApp</name>
+	<description>taskSchedulerApp is a project to help its users schedule their plans and set updatable reminders for each tasks.</description>
 	<properties>
 		<java.version>8</java.version>
 	</properties>
@@ -27,8 +27,8 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
-		</dependency>
-		<dependency>
+		</dependency>	   
+	   <dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
@@ -48,6 +48,12 @@
 			<version>1.18.20</version>
 			<scope>provided</scope>
     	</dependency>
+		
+		<dependency>
+    		<groupId>org.springdoc</groupId>
+    		<artifactId>springdoc-openapi-ui</artifactId>
+    		<version>1.6.4</version>
+		</dependency>
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>

@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.domain.models.controller;
 
 //import java.util.ArrayList;
 //import org.springframework.beans.factory.annotation.Autowired;
@@ -7,6 +7,7 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.example.demo.taskSchedulerRepository;
 import com.example.demo.domain.entities.Todo;
 
 //import org.hibernate.criterion.Example;
@@ -26,13 +27,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/todos")
-public class DemoController {
+public class taskSchedularAppController {
 
 	//@Autowired
-	private DemoRepository _myDemoRepository;
+	private taskSchedulerRepository _myDemoRepository;
    // private List<Todo> _todos = null;
 	
-	public DemoController(DemoRepository demoRepo) {
+	public taskSchedularAppController(taskSchedulerRepository demoRepo) {
 		this._myDemoRepository = demoRepo;
 
 	}

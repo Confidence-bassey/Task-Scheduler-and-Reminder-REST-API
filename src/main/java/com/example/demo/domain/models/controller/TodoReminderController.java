@@ -1,4 +1,4 @@
-package com.example.demo.domain.models;
+package com.example.demo.domain.models.controller;
 
 //import java.util.ArrayList;
 import java.util.Collection;
@@ -10,9 +10,10 @@ import java.util.Optional;
 //import javax.persistence.Id;
 import javax.servlet.http.HttpServletRequest;
 
-import com.example.demo.DemoRepository;
+import com.example.demo.taskSchedulerRepository;
 //import com.example.demo.domain.entities.Todo;
 import com.example.demo.domain.entities.TodoReminder;
+import com.example.demo.domain.models.TodoReminderRepository;
 
 import org.springframework.data.domain.Example;
 import org.springframework.http.HttpStatus;
@@ -33,11 +34,11 @@ public class TodoReminderController {
     
     
     private TodoReminderRepository myTodoRepo;
-    private DemoRepository _todosRepository;
+    private taskSchedulerRepository _todosRepository;
 
    // List<TodoReminder> addDemoReminder = null;
 
-    public TodoReminderController(TodoReminderRepository myRemRepo, DemoRepository todoRepository){
+    public TodoReminderController(TodoReminderRepository myRemRepo, taskSchedulerRepository todoRepository){
         this.myTodoRepo = myRemRepo;
         this._todosRepository = todoRepository;
     }
